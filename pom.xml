@@ -1,0 +1,80 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.0.0</version>
+  </parent>
+
+  <groupId>org.gershaw</groupId>
+  <artifactId>parent</artifactId>
+  <version>0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <java.version>17</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <repository-owner>ggershaw</repository-owner>
+    <repository-name>Examples</repository-name>
+    <branch-name>master</branch-name>
+    <github.global.server>github</github.global.server>
+  </properties>
+
+  <modules>
+    <module>quickfixj</module>
+  </modules>
+
+  <dependencies>
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+    </dependency>
+  </dependencies>
+
+
+  <distributionManagement>
+    <repository>
+      <id>internal.repo</id>
+      <name>Temporary Staging Repository</name>
+      <url>internal.repo::file://${project.build.directory}/mvn-artifact</url>
+    </repository>
+  </distributionManagement>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+      <configuration>
+        <excludes>
+          <exclude>
+            <artifactId>lombok</artifactId>
+            <groupId>org.projectlombok</groupId>
+          </exclude>
+        </excludes>
+      </configuration>
+      <groupId>org.springframework.boot</groupId>
+    </plugin>
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <altDeploymentRepository>
+            internal.repo::file://${project.build.directory}/mvn-artifact
+          </altDeploymentRepository>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
