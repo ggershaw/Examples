@@ -1,0 +1,5 @@
+quickfixj.config: client.properties
+
+---
+spring.config.activate.on-profile: ssl
+quickfixj.config: ssl-client.properties

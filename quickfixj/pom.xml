@@ -1,0 +1,42 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.gershaw</groupId>
+    <artifactId>parent</artifactId>
+    <version>0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>quickfixj</artifactId>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>client</module>
+    <module>server</module>
+  </modules>
+
+  <properties>
+    <quickfixj-all.version>2.3.1</quickfixj-all.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <artifactId>quickfixj-all</artifactId>
+      <groupId>org.quickfixj</groupId>
+      <version>${quickfixj-all.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>spring-context</artifactId>
+      <groupId>org.springframework</groupId>
+    </dependency>
+  </dependencies>
+</project>
