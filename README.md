@@ -15,5 +15,34 @@ Project is created with:
 
 
 ## Setup
-To run this project, launch the main classes separately [Client.java](quickfixj%2Fclient%2Fsrc%2Fmain%2Fjava%2Forg%2Fgershaw%2Fquickfixj%2Fssl%2Fclient%2FClient.java) and [Server.java](quickfixj%2Fserver%2Fsrc%2Fmain%2Fjava%2Forg%2Fgershaw%2Fquickfixj%2Fserver%2FServer.java) from your favorite IDE. Use `-Dspring.profiles.active=ssl` on both Client and Server to enable SSL
+ 
+### IDE
+launch the main classes separately: 
+[Client.java](https://github.com/ggershaw/Examples/blob/5ec39a203bd2617de152b62e7e2b5453b4d2d7d2/quickfixj/client/src/main/java/org/gershaw/quickfixj/ssl/client/Client.java) 
+[Server.java](https://github.com/ggershaw/Examples/blob/5ec39a203bd2617de152b62e7e2b5453b4d2d7d2/quickfixj/server/src/main/java/org/gershaw/quickfixj/server/Server.java)
+Use `-Dspring.profiles.active=ssl` on both Client and Server to enable SSL
+
+### Maven
+
+
+#### Windows
+Open 2 cmd prompts. 1 will be used to start the server. 1 will be used to start the client
+
+##### Start Server
+
+###### Non-SSL
+mvn -pl :server spring-boot:run
+
+####### SSL
+mvn -pl :server spring-boot:run -Dspring-boot.run.profiles=ssl
+
+
+##### Start Client
+mvn -pl :client spring-boot:run
+
+###### Non-SSL
+mvn -pl :client spring-boot:run
+
+####### SSL
+mvn -pl :client spring-boot:run -Dspring-boot.run.profiles=ssl
 

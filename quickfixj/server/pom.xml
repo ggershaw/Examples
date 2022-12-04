@@ -10,4 +10,20 @@
   </parent>
 
   <artifactId>server</artifactId>
+
+  <properties>
+    <start-class>org.gershaw.quickfixj.server.Server</start-class>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <skip>false</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
