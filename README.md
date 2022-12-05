@@ -6,7 +6,8 @@ Examples
 * [Setup](#setup)
 
 ## General info
-This project consists of a Fix client and Server that are able to run as SSL or Non-SSL depending on the spring profile. 
+This project consists of a Fix client and Server that are able to run as SSL or Non-SSL depending on the spring profile chosen. The Client's SSL profile injects mock FIX credentials, which have been encrypted in the client's [application.yml](quickfixj/client/src/main/resources/application.yml) using Spring Boot/Jaspyt. FYI, the credentials will appear in clear text in the FIX messages. Additionally, the Jaspyt encryption password is in clear text in the client's [application.yml](quickfixj/client/src/main/resources/application.yml). A production version of this application could store it as an environment variable. See the following link for more info [Jasypt Security](https://github.com/ulisesbocchio/jasypt-spring-boot#demo-app)   
+
 
 ## Technologies
 Project is created with:
@@ -18,8 +19,8 @@ Project is created with:
  
 ### IDE
 launch the main classes separately: 
-- [Client.java](https://github.com/ggershaw/Examples/blob/5ec39a203bd2617de152b62e7e2b5453b4d2d7d2/quickfixj/client/src/main/java/org/gershaw/quickfixj/ssl/client/Client.java) 
-- [Server.java](https://github.com/ggershaw/Examples/blob/5ec39a203bd2617de152b62e7e2b5453b4d2d7d2/quickfixj/server/src/main/java/org/gershaw/quickfixj/server/Server.java)
+- [Client.java](quickfixj/client/src/main/java/org/gershaw/quickfixj/ssl/client/Client.java) 
+- [Server.java](quickfixj/server/src/main/java/org/gershaw/quickfixj/server/Server.java)
   - Use `-Dspring.profiles.active=ssl` on both Client and Server to enable SSL
 
 ### Maven
@@ -32,3 +33,5 @@ launch the main classes separately:
       - Non-SSL: `mvn -pl :client spring-boot:run`
       - SSL: `mvn -pl :client spring-boot:run -Dspring-boot.run.profiles=ssl`
 
+### Self Signed SSL Cert creation
+FYI, this is for testing purposes only. See article [here](https://community.pivotal.io/s/article/Generating-a-self-signed-SSL-certificate-using-the-Java-keytool-command?language=en_US0)
