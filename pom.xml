@@ -61,14 +61,6 @@
       </configuration>
       <groupId>org.springframework.boot</groupId>
     </plugin>
-      <plugin>
-        <artifactId>maven-deploy-plugin</artifactId>
-        <configuration>
-          <altDeploymentRepository>
-            internal.repo::file://${project.build.directory}/mvn-artifact
-          </altDeploymentRepository>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
 </project>

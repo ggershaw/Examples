@@ -1,11 +1,13 @@
 package org.gershaw.quickfixj.ssl.client.config;
 
+import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import org.gershaw.quickfixj.ssl.client.FixInitiator;
-import org.gershaw.quickfixj.ssl.client.NoOpApplication;
+import org.gershaw.quickfixj.ssl.client.handler.LogonSender;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import quickfix.Application;
+import quickfix.ApplicationFunctionalAdapter;
 import quickfix.ConfigError;
 import quickfix.DefaultMessageFactory;
 import quickfix.Initiator;
@@ -16,6 +18,7 @@ import quickfix.SocketInitiator;
 
 @Configuration
 @SuppressWarnings("unused")
+@EnableEncryptableProperties
 class ClientConfig {
 
   @Bean
@@ -36,8 +39,16 @@ class ClientConfig {
   }
 
   @Bean
-  Application application() {
-    return new NoOpApplication();
+  ApplicationFunctionalAdapter application() {
+    return new ApplicationFunctionalAdapter();
+  }
+
+  @Bean
+  LogonSender logonSender(final ApplicationFunctionalAdapter functionalAdapter,
+      @Value("${quickfixj.user}") final String user,
+      @Value("${quickfixj.password}") final String password
+  ) {
+    return new LogonSender(functionalAdapter, user, password);
   }
 
   @Bean

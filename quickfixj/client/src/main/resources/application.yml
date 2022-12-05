@@ -1,5 +1,11 @@
 quickfixj.config: client.properties
+jasypt:
+  encryptor:
+    password: NotForProduction
 
 ---
 spring.config.activate.on-profile: ssl
-quickfixj.config: ssl-client.properties
+quickfixj:
+  config: ssl-client.properties
+  user: ENC(Z5I0U5ruLgaonA6jwSSbk3Ed5GKM/mbAIJnXxoAz7Ba9ldP4Z0A/lGRBQ/BaMJuq)
+  password: ENC(L7g2wSGjZHE3cO3e8BJboeplJpf1TmarC9Id9DSalF8OeVw3HaPIPmNH18coQWm5)
