@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.gershaw</groupId>
+    <artifactId>quickfixj</artifactId>
+    <version>0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>custom-fix-message-generation</artifactId>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven-replacer-plugin.version>1.4.1</maven-replacer-plugin.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.quickfixj</groupId>
+      <artifactId>quickfixj-core</artifactId>
+      <version>${quickfixj.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+      <groupId>org.quickfixj</groupId>
+      <artifactId>quickfixj-codegenerator</artifactId>
+        <executions>
+          <execution>
+            <id>fixt11</id>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <dictFile>src/main/resources/FIXT11-geoff.xml</dictFile>
+              <packaging>org.gershaw.quickfixj.fixt11</packaging>
+              <fieldPackage>org.gershaw.quickfixj.fixt11.field</fieldPackage>
+            </configuration>
+          </execution>
+          <execution>
+            <id>fix50sp2</id>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <dictFile>src/main/resources/FIX50SP2.modified.xml</dictFile>
+              <packaging>org.gershaw.quickfixj.fix50sp2</packaging>
+              <fieldPackage>org.gershaw.quickfixj.fix50sp2.field</fieldPackage>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <skip>false</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

@@ -11,6 +11,13 @@
 
   <artifactId>client</artifactId>
 
+  <dependencies>
+    <dependency>
+      <artifactId>quickfixj-all</artifactId>
+      <groupId>org.quickfixj</groupId>
+    </dependency>
+  </dependencies>
+
   <build>
     <plugins>
       <plugin>

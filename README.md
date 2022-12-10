@@ -1,12 +1,35 @@
 Examples
 =======
+
+<p>
+</p>
+
+This project has a child module named 
+[custom-fix-message-generation](quickfixj/custom-fix-message-generation). It generates classes
+from a FIX dictionary. As you know, this is about 1.8k source files. As a result, it takes roughly
+5 minutes for this entire project to build. You can shorten this by using `
+mvn -pl !org.gershaw:custom-fix-message-generation install
+`
+
+
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
 ## General info
-This project consists of a Fix client and Server that are able to run as SSL or Non-SSL depending on the spring profile chosen. The Client's SSL profile injects mock FIX credentials, which have been encrypted in the client's [application.yml](quickfixj/client/src/main/resources/application.yml) using Spring Boot/Jaspyt. FYI, the credentials will appear in clear text in the FIX messages. Additionally, the Jaspyt encryption password is in clear text in the client's [application.yml](quickfixj/client/src/main/resources/application.yml). A production version of this application could store it as an environment variable. See the following link for more info [Jasypt Security](https://github.com/ulisesbocchio/jasypt-spring-boot#demo-app)   
+This project consists of a Fix client and Server that are able to run as SSL or Non-SSL 
+depending on the spring profile chosen. The Client's SSL profile injects mock FIX credentials, 
+which have been encrypted in the client's 
+[application.yml](quickfixj/client/src/main/resources/application.yml) using Spring Boot/Jaspyt. 
+FYI, the credentials will appear in clear text in the FIX messages. Additionally, the Jaspyt
+encryption password is in clear text in the client's 
+[application.yml](quickfixj/client/src/main/resources/application.yml).
+A production version of this application could store it as an environment variable. 
+See the following link for more info 
+[Jasypt Security](https://github.com/ulisesbocchio/jasypt-spring-boot#demo-app)
+
+
 
 
 ## Technologies

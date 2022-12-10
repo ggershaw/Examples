@@ -14,18 +14,10 @@
   <modules>
     <module>client</module>
     <module>server</module>
+    <module>custom-fix-message-generation</module>
   </modules>
 
-  <properties>
-    <quickfixj-all.version>2.3.1</quickfixj-all.version>
-  </properties>
-
   <dependencies>
-    <dependency>
-      <artifactId>quickfixj-all</artifactId>
-      <groupId>org.quickfixj</groupId>
-      <version>${quickfixj-all.version}</version>
-    </dependency>
     <dependency>
       <artifactId>spring-boot-starter</artifactId>
       <groupId>org.springframework.boot</groupId>
@@ -41,7 +33,6 @@
     <dependency>
       <groupId>com.github.ulisesbocchio</groupId>
       <artifactId>jasypt-spring-boot-starter</artifactId>
-      <version>3.0.4</version>
     </dependency>
   </dependencies>
 
@@ -50,7 +41,6 @@
       <plugin>
         <groupId>com.github.ulisesbocchio</groupId>
         <artifactId>jasypt-maven-plugin</artifactId>
-        <version>3.0.4</version>
       </plugin>
     </plugins>
   </build>

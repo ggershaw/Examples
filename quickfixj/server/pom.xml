@@ -11,9 +11,12 @@
 
   <artifactId>server</artifactId>
 
-  <properties>
-    <start-class>org.gershaw.quickfixj.server.Server</start-class>
-  </properties>
+  <dependencies>
+    <dependency>
+      <artifactId>quickfixj-all</artifactId>
+      <groupId>org.quickfixj</groupId>
+    </dependency>
+  </dependencies>
 
   <build>
     <plugins>
