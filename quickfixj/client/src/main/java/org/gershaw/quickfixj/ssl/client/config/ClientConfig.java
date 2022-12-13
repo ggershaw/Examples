@@ -6,6 +6,7 @@ import org.gershaw.quickfixj.ssl.client.handler.LogonSender;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import quickfix.Application;
 import quickfix.ApplicationFunctionalAdapter;
 import quickfix.ConfigError;
@@ -43,6 +44,7 @@ class ClientConfig {
     return new ApplicationFunctionalAdapter();
   }
 
+  @Profile("ssl")
   @Bean
   LogonSender logonSender(final ApplicationFunctionalAdapter functionalAdapter,
       @Value("${quickfixj.user}") final String user,
@@ -50,6 +52,7 @@ class ClientConfig {
   ) {
     return new LogonSender(functionalAdapter, user, password);
   }
+
 
   @Bean
   FixInitiator fixInitiator(final Initiator initiator) {
