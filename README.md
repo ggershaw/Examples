@@ -4,13 +4,20 @@ Examples
 <p>
 </p>
 
-This project has a child module named 
+<strong style="color:red;">Attention</strong> This project has a child module named 
 [custom-fix-message-generation](quickfixj/custom-fix-message-generation). It generates classes
 from a FIX dictionary. As you know, this is about 1.8k source files. As a result, it takes roughly
-5 minutes for this entire project to build. You can shorten this by using `
+5 minutes for this entire project to build. After you build the whole project for the first, 
+you can shorten the build by using.
+
+`
 mvn -pl !org.gershaw:custom-fix-message-generation install
 `
+<p>
+  <strong>After, you build the whole project the first time, you must mark the folder quickfixj/custom-fix-message-generation/target/generated-sources as a generated source.</strong>
+</p>
 
+![See Screenshot](/quickfixj/custom-fix-message-generation/Screenshot.png?raw=true "See Screenshot")
 
 ## Table of contents
 * [General info](#general-info)

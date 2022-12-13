@@ -4,8 +4,10 @@ import org.gershaw.quickfixj.fixt11.GeoffsHeartbeat;
 import org.gershaw.quickfixj.fixt11.field.MsgType;
 import quickfix.FieldNotFound;
 
-/** WARNING: You must run mvn package or later on this submodule to generate the classes before
- * running this class. Otherwise, the compiler won't find classes that you haven't generated.
+/** WARNING: You must run mvn package or later in the maven lifecycle on this submodule to generate
+ * the classes before running this class. Otherwise, the compiler won't find the generated classes.
+ * You must also mark quickfixj/custom-fix-message-generation/target/generated-sources as a
+ * generated source folder
  * NOTE: the maven plugin generates the source of 1803 classes. It takes time for this submodule to
  * build and this class to start running for the first time in your IDE. Please don't freak out * */
 public class UsingCustomMessages {
