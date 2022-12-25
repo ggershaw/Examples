@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.gershaw</groupId>
+    <artifactId>parent</artifactId>
+    <version>0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>spring-boot-starter</artifactId>
+  <properties>
+    <quickfixj-starter.version>2.14.0</quickfixj-starter.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.allune</groupId>
+      <artifactId>quickfixj-spring-boot-starter</artifactId>
+      <version>${quickfixj-starter.version}</version>
+    </dependency>
+  </dependencies>
+</project>

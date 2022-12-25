@@ -1,0 +1,46 @@
+management:
+  health:
+  quickfixjserver:
+    enabled: true
+  endpoint:
+    quickfixjserver:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: quickfixjserver
+
+quickfixj:
+  client:
+    auto-startup: true
+    force-disconnect: false
+    phase: 0
+    jmx-enabled: true
+    concurrent:
+      enabled: true
+      useDefaultExecutorFactory: true
+      queueCapacity: Integer.MAX_VALUE
+      corePoolSize: 1
+      maxPoolSize: 4
+      allowCoreThreadTimeOut: true
+      keepAliveSeconds: 60
+      waitForTasksToCompleteOnShutdown: false
+      awaitTerminationMillis: 0
+      threadNamePrefix: "Gershaw-"
+    message-store-factory: memory
+    log-factory: screen
+    configString: |
+      [default]
+      ConnectionType=initiator
+      SenderCompID=CLIENT
+      TargetCompID=SERVER
+      SocketConnectHost=localhost
+      StartTime=00:00:00
+      EndTime=00:00:00
+      HeartBtInt=30
+      ReconnectInterval=5
+      BeginString=FIXT.1.1
+      DefaultApplVerID=FIX.5.0SP2
+      
+      [session]
+      SocketConnectPort=9876

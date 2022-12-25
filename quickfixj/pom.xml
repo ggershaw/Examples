@@ -15,6 +15,7 @@
     <module>client</module>
     <module>server</module>
     <module>custom-fix-message-generation</module>
+    <module>rest</module>
   </modules>
 
   <dependencies>
