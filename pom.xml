@@ -5,13 +5,16 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.0.0</version>
+    <version>2.7.7</version>
   </parent>
 
   <groupId>org.gershaw</groupId>
   <artifactId>parent</artifactId>
   <version>0-SNAPSHOT</version>
   <packaging>pom</packaging>
+
+  <name>QuickFix/J Spring Boot Examples And More</name>
+  <url>https://github.com/ggershaw/Examples</url>
 
   <properties>
     <java.version>17</java.version>
@@ -23,10 +26,15 @@
     <jasypt.version>3.0.4</jasypt.version>
     <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
     <quickfixj.version>2.3.1</quickfixj.version>
+    <tempus-fugit.version>1.1</tempus-fugit.version>
+    <slf4j.version>2.0.5</slf4j.version>
+    <quickfixj-spring-boot.version>2.14.0</quickfixj-spring-boot.version>
+    <quickfixj-all.version>2.3.1</quickfixj-all.version>
   </properties>
 
   <modules>
     <module>quickfixj</module>
+    <module>spring-boot-starter</module>
     <module>collections</module>
   </modules>
 
@@ -45,7 +53,22 @@
       <dependency>
         <groupId>org.quickfixj</groupId>
         <artifactId>quickfixj-all</artifactId>
-        <version>2.3.1</version>
+        <version>${quickfixj-all.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.code.tempus-fugit</groupId>
+        <artifactId>tempus-fugit</artifactId>
+        <version>${tempus-fugit.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.allune</groupId>
+        <artifactId>quickfixj-spring-boot-starter</artifactId>
+        <version>${quickfixj-spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.allune</groupId>
+        <artifactId>quickfixj-spring-boot-actuator</artifactId>
+        <version>${quickfixj-spring-boot.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -53,6 +76,14 @@
     <dependency>
       <artifactId>lombok</artifactId>
       <groupId>org.projectlombok</groupId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
     </dependency>
   </dependencies>
 
