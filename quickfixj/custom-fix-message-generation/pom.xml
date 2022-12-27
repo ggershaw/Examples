@@ -28,6 +28,7 @@
       <plugin>
       <groupId>org.quickfixj</groupId>
       <artifactId>quickfixj-codegenerator</artifactId>
+        <version>2.3.1</version>
         <executions>
           <execution>
             <id>fixt11</id>
