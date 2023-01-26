@@ -32,8 +32,6 @@ public class MarketDataIncrementalRefreshFactory {
 
     private static MDIncGrp createIncGroup(@NonNull final Security security) {
         final MDIncGrp mdIncGrp = new MDIncGrp();
-        mdIncGrp.setField(new MDUpdateAction(MDUpdateAction.CHANGE));
-        mdIncGrp.setField(new MDReqID(UUID.randomUUID().toString()));
         createMdEntryTypes(security).forEach(mdIncGrp::addGroup);
         return mdIncGrp;
     }
