@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="56805d9f-9721-4916-990d-8da85bd54357" name="Changes" comment="Initial Checkin">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-starter/src/main/java/org/gershaw/quickfixj/springboot/exception/FixSendingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-starter/src/test/java/org/gershaw/quickfixj/springboot/server/service/MarketDataServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-starter/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/main/java/org/gershaw/concurrent/HashedExecutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/main/java/org/gershaw/concurrent/HashedExecutorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/test/java/org/gershaw/concurrent/PausableThreadPoolExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/test/java/org/gershaw/concurrent/PausableThreadPoolExecutorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickfixj/client/client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickfixj/custom-fix-message-generation/custom-fix-message-generation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickfixj/server/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-starter/spring-boot-starter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-starter/src/main/java/org/gershaw/quickfixj/springboot/client/service/MarketDataRequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-starter/src/main/java/org/gershaw/quickfixj/springboot/client/service/MarketDataRequestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-starter/src/main/java/org/gershaw/quickfixj/springboot/server/component/MarketDataFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-starter/src/main/java/org/gershaw/quickfixj/springboot/server/component/MarketDataIncrementalRefreshFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-starter/src/main/java/org/gershaw/quickfixj/springboot/server/service/MarketDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-starter/src/main/java/org/gershaw/quickfixj/springboot/server/service/MarketDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-starter/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-starter/src/main/resources/application.yaml" afterDir="false" />
+    </list>
+    <list id="042914a9-485c-44a5-a65b-3c1e42fa38d8" name="restcollections" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ggershaw &lt;ggershaw@hotmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/rollback" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="KEEP" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="threads" value="2" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="server" />
+        <option value="client" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2JRpEu17Pzx88ND3NzKCAcHNFd0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ggers/IdeaProjects/Examples/spring-boot-starter&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.gershaw.quickfixj.springboot.exception" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ggers\IdeaProjects\Examples\spring-boot-starter" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="org.gershaw.quickfixj.springboot.util.Utils" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.gershaw.quickfixj.springboot.server.service" />
+      <recent name="org.gershaw.quickfixj.springboot.client" />
+      <recent name="org.gershaw.quickfixj.springboot.client.service" />
+      <recent name="org.gershaw.quickfixj.springboot.client.component" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.gershaw.quickfixj.springboot.server.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in collections">
+    <configuration name="BootifiedServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.gershaw.quickfixj.springboot.server.BootifiedServer" />
+      <module name="spring-boot-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.gershaw.quickfixj.springboot.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.gershaw.quickfixj.springboot.client.BootifiedClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.gershaw.quickfixj.springboot.client.BootifiedClient" />
+      <module name="spring-boot-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.gershaw.quickfixj.springboot.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in collections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collections" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarketDataServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.gershaw.quickfixj.springboot.server.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.gershaw.quickfixj.springboot.server.service" />
+      <option name="MAIN_CLASS_NAME" value="org.gershaw.quickfixj.springboot.server.service.MarketDataServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarketDataServiceTest.handle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.gershaw.quickfixj.springboot.server.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.gershaw.quickfixj.springboot.server.service" />
+      <option name="MAIN_CLASS_NAME" value="org.gershaw.quickfixj.springboot.server.service.MarketDataServiceTest" />
+      <option name="METHOD_NAME" value="handle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="parent [-pl...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="-pl" />
+                <option value="!org.gershaw:custom-fix-message-generation" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.BootifiedServer" />
+      <item itemvalue="Application.org.gershaw.quickfixj.springboot.client.BootifiedClient" />
+      <item itemvalue="JUnit.All in collections" />
+      <item itemvalue="JUnit.MarketDataServiceTest" />
+      <item itemvalue="JUnit.MarketDataServiceTest.handle" />
+      <item itemvalue="Maven.parent [-pl...]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in collections" />
+        <item itemvalue="Application.BootifiedServer" />
+        <item itemvalue="Application.org.gershaw.quickfixj.springboot.client.BootifiedClient" />
+        <item itemvalue="JUnit.MarketDataServiceTest" />
+        <item itemvalue="JUnit.MarketDataServiceTest.handle" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56805d9f-9721-4916-990d-8da85bd54357" name="Changes" comment="" />
+      <changelist id="042914a9-485c-44a5-a65b-3c1e42fa38d8" name="restcollections" comment="" />
+      <created>1672050681004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672050681004</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial Checkin">
+      <created>1672145489304</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672145489304</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial Checkin">
+      <created>1672149549233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672149549233</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial Checkin">
+      <created>1672149565508</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672149565508</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial Checkin">
+      <created>1672188886250</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672188886250</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial Checkin">
+      <created>1672191286094</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672191286094</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Initial Checkin">
+      <created>1672259004183</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672259004183</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Initial Checkin">
+      <created>1672321610574</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672321610574</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Initial Checkin">
+      <created>1672321842073</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672321842073</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Initial Checkin">
+      <created>1672457973384</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672457973384</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Initial Checkin">
+      <created>1672639425783</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672639425783</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:javax.enterprise:cdi-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feature/rollback" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Checkin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Checkin" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-starter/src/main/java/org/gershaw/quickfixj/springboot/server/component/ServerApplicationAdapter.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-starter/src/main/java/org/gershaw/quickfixj/springboot/client/component/MarketDataRequestor.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-starter/src/main/java/org/gershaw/quickfixj/springboot/client/component/MarketDataRequestor.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="io.allune.quickfixj.spring.boot.starter.template.MessageValidationException" package="io.allune.quickfixj.spring.boot.starter.template" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Examples$All_in_spring_boot_starter.ic" NAME="All in spring-boot-starter Coverage Results" MODIFIED="1672107077893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
